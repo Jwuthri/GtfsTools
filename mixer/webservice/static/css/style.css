@@ -1,0 +1,166 @@
+@@charset "UTF-8"
+
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.separator {
+	height: 3px;
+	width: 5%;
+	border: none;
+	box-shadow: none;
+	background-color: #3498D8;
+}
+
+.btn-custom {
+	background-color: #3498D8;
+	color: #ffffff;
+}
+
+.btn-custom:hover {
+	background-color: #2C3E50;
+}
+
+/* header */
+
+.header {
+	background-color: #3498D8;
+	height: 70px;
+	line-height: 70px;
+}
+
+.logo {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	float: left;
+}
+
+.menu {
+	float: right;
+}
+
+.menu a {
+	color: #ffffff;
+	margin-right: 20px;
+}
+
+.menu a:hover {
+	 color: #2C3E50;
+}
+
+/* banner */
+
+.banner {
+	width: 100%;
+	max-width: 100%;
+}
+
+.ban {
+	width: 100%;
+	max-width: 100%;
+	position: relative;
+}
+
+.ban img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.inner-banner {
+	position: absolute;
+	top: 45%;
+	width: 100%;
+	text-align: center;
+}
+
+.inner-banner h1 {
+	color: #ffffff;
+	text-shadow: 1px 1px 20px #000000;
+}
+
+/* about */
+
+#about {
+	text-align: center;
+	padding-top: 10%;
+}
+
+.about article {
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.about article h2 {
+	text-align: center;
+}
+
+/* contact */
+
+.footer {
+	background-color: #2C3E50;
+	height: 700px;
+}
+
+.footer p {
+	color: #ffffff;
+	text-align: center;
+	padding-top: 2%;
+}
+
+.footer h2 {
+	text-align: center;
+}
+
+#contact {
+	padding-top: 10%;
+	color: #ffffff;
+	text-align: center;
+}
+
+.formulaireContact {
+	padding-top: 10%;
+	width: 100%;
+	display: block;
+	margin-left: 50%;
+}
+
+input {
+	margin-bottom: 20px;
+}
+
+input[type=text] {
+	height: 50px;
+	width: 200%;
+	border: none;
+}
+
+input[type=email] {
+	height: 50px;
+	width: 200%;
+	border: none;
+}
+
+textarea {
+	width: 200%;
+	height: 200px;
+	resize: vertical;
+}
