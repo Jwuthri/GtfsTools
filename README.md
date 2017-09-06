@@ -1,34 +1,42 @@
-########
-# PATH #
-########
 
-Ajouter Mixer dans le python path:
-C:\Users\jwurhtri\Projet\Python\Mixer\;
+# GtfsTools [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 
-############
-# SETTINGS #
-############
+> pip install is coming
 
-DEBUG: afficher ou non des logs dans la console
-db_type: "sql_server" ou "oracle"
-osrm: uri du serveur osm
-safe_mode: on commit seulement si il n'y a pas eu de problème lors des transactions sinon on rollback tout.
+For now you must clone this repo and add him to your PYTHON_PATH
 
-##########
-# LAUNCH #
-##########
+### Installation
 
-Pour lancer le mixer, j'ai pas encore fait les trucs pour appeler en ligne de commande mais tu peux lancer comme ca pour l'instant:
+GtfsTools requires [Python 3.6](https://www.python.org/downloads/release/python-360/).
 
-cmd => ipython
+Install dependencies thanks to setup.py
+```
+$ python setup.py
+```
 
-from mixer.gtfs.mixer.controller import Controller
-from mixer.settings import DATA_PATH
-mix = Controller("ACSTransportationETL", DATA_PATH)
-mix.insert_new_gtfs()
+### How it works ?
 
-#########
-# SETUP #
-#########
+Work in progress....
 
-Double clique sur setup.py et ca installe toutes les dépendances du projet
+### Run
+
+```python
+from mixer.gtfs.to_zip.controller import *
+
+new_zip_path = Controller(gtfs_path=path_of_your_zip).main()
+```
+new_zip_path contains the path of the gtfs normalized, with shapes, stoptimes etc...
+
+### Todos
+
+ - Write Tests
+ - Make pip install
+ - ...
+
+License
+----
+
+MIT
+
+
+**Free Software !**
