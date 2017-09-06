@@ -1,6 +1,8 @@
 """Controller."""
 from mixer.gtfs.to_zip.model import Model
 from mixer.gtfs.to_zip.writer import Writer
+from mixer.settings import DATA_PATH
+
 from mixer import settings
 
 
@@ -22,4 +24,4 @@ class Controller(object):
 
 
 if __name__ == "__main__":
-    Controller(gtfs_path="/opt/ADL_db/TransportationData/GTFS/Nancy/2016/6.gtfs.stan.20160828.zip", xtp=True).main()
+    Controller(gtfs_path=DATA_PATH, xtp=False).main()
